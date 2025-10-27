@@ -24,20 +24,8 @@ Aplicación móvil desarrollada con React Native que permite gestionar tareas pe
 | **Expo SDK 54** | Desarrollo y testing |
 | **StyleSheet API** | Estilos nativos de React Native |
 
-## � Instalación y Ejecución
 
-```bash
-# Instalar dependencias
-npm install
 
-# Ejecutar en Expo
-npm start
-
-# O ejecutar en plataforma específica
-npm run android  # Android
-npm run ios      # iOS
-npm run web      # Web
-```
 
 **Nota:** Todos los archivos necesarios (`store/`, `hooks/`, `components/`) ya están incluidos en el proyecto.
 
@@ -94,17 +82,7 @@ Componente se re-renderiza
 | `updateTask(data)` | Actualiza tarea existente | `dispatch(updateTask({ id, title, description, status }))` |
 | `deleteTask(id)` | Elimina tarea por ID | `dispatch(deleteTask(taskId))` |
 
-## 🎨 Diseño y UX
 
-### Paleta de Colores
-
-| Color | Código | Uso |
-|-------|--------|-----|
-| Azul Material | `#1E88E5` | Primario (botones, header, bordes) |
-| Azul Claro | `#E3F2FD` | Fondo de pantallas |
-| Verde | `#00C853` | Badge "Completada" |
-| Naranja | `#FFA726` | Badge "Pendiente" |
-| Rojo | `#EF5350` | Botón "Eliminar" |
 
 ### Características Visuales
 
@@ -140,10 +118,10 @@ Componente se re-renderiza
 
 ## 👥 Autores
 
-| Nombre | Rol | Contacto |
-|--------|-----|----------|
-| **[Tu Nombre]** | Desarrollador Principal | [email@ejemplo.com](mailto:email@ejemplo.com) |
-| **[Nombre Compañero]** | Colaborador | [email@ejemplo.com](mailto:email@ejemplo.com) |
+| Nombre | Rol | 
+|--------|-----|
+| **[LIAM MORILLO]** | Desarrollador  |
+| **[ORLANDO BARRIENTOS]** | Desarrollador | 
 
 ---
 
