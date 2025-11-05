@@ -12,7 +12,6 @@ Aplicación móvil desarrollada con React Native que permite gestionar tareas pe
 - ✅ **Validación de formularios** (título obligatorio, mínimo 3 caracteres)
 - 📦 **Estado global con Redux** - datos sincronizados en toda la app
 
-## 🛠️ Stack Técnico
 
 | Tecnología | Uso en el Proyecto |
 |------------|--------------------|
@@ -29,70 +28,6 @@ Aplicación móvil desarrollada con React Native que permite gestionar tareas pe
 
 **Nota:** Todos los archivos necesarios (`store/`, `hooks/`, `components/`) ya están incluidos en el proyecto.
 
-## 📝 Estructura del Proyecto
-
-```
-ejercicio-de-componentes/
-├── App.js                    # Punto de entrada, Provider de Redux
-├── components/               # Componentes reutilizables
-│   ├── TaskCard.js           # Tarjeta de tarea individual
-│   ├── PerfileCard.js        # Header con título y contador
-│   └── ButtonCustom.js       # Botón personalizado (primary/secondary)
-├── pages/                    # Pantallas principales
-│   ├── home.js               # Lista de tareas con Redux
-│   └── login.js              # Formulario crear/editar con validación
-├── store/                    # Redux - Estado global
-│   ├── store.js              # Configuración del store
-│   └── tasksSlice.js         # Slice de tareas (actions + reducer)
-├── hooks/                    # Custom Hooks
-│   └── useAlert.js           # Hook para alertas
-├── routes/                   # Navegación
-│   └── routes.js             # Stack Navigator
-└── package.json              # Dependencias
-```
-
-## 🏛️ Arquitectura Redux
-
-### Flujo de Datos
-
-```
-Componente (TaskCard)
-    │
-    │ dispatch(deleteTask(id))
-    ↓
-Action (deleteTask)
-    │
-    ↓
-Reducer (tasksSlice)
-    │
-    │ state.tasks = state.tasks.filter(...)
-    ↓
-Store (estado actualizado)
-    │
-    │ useSelector detecta cambio
-    ↓
-Componente se re-renderiza
-```
-
-### Acciones Disponibles
-
-| Acción | Descripción | Uso |
-|--------|-------------|-----|
-| `addTask(data)` | Crea nueva tarea | `dispatch(addTask({ title, description, status }))` |
-| `updateTask(data)` | Actualiza tarea existente | `dispatch(updateTask({ id, title, description, status }))` |
-| `deleteTask(id)` | Elimina tarea por ID | `dispatch(deleteTask(taskId))` |
-
-
-
-### Características Visuales
-
-- 📊 **Contador dinámico** en header (ej: "2 tareas • 1 pendiente • 1 completada")
-- 🎯 **Badges con iconos** (✓ completada, ⏱ pendiente)
-- 🌈 **Borde lateral de color** en cada tarjeta
-- 💫 **Sombras sutiles** en botones y tarjetas
-- 📱 **Diseño optimizado** para móviles
-- 🎭 **Feedback táctil** con opacidad al presionar
-- 📝 **Estado vacío** con mensaje amigable
 
 ## � Conceptos Aplicados
 
